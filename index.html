@@ -1,21 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>hippogriff.me</title>
-  <style>
-    body {
-      font-family: system-ui, -apple-system, sans-serif;
-      max-width: 720px;
-      margin: 4rem auto;
-      padding: 0 1.25rem;
-      line-height: 1.6;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Compass - Editorial Travel Template</title>
+    <!--
+
+    Tooplate 2164 Compass
+    
+    https://www.tooplate.com/view/2164-compass
+    
+    Free HTML CSS Template
+
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tooplate-2164-compass-style.css">
 </head>
 <body>
-  <h1>hippogriff.me</h1>
-  <p>This page is hosted on GitHub Pages with custom DNS and HTTPS enabled.</p>
+
+    <!-- NAVIGATION -->
+    <nav class="nav-bar">
+        <a href="#" class="nav-logo">The Record</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links nav-links--desktop">
+            <li><a href="#prologue">Prologue</a></li>
+            <li><a href="#route">The Course</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- MOBILE DRAWER (outside nav-bar to avoid backdrop-filter containing block) -->
+    <ul class="nav-links nav-links--mobile">
+        <li class="nav-close-wrap"><button class="nav-close" aria-label="Close menu">&times;</button></li>
+        <li><a href="#prologue">Prologue</a></li>
+        <li><a href="#route">The Course</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- SECTION 1 — HERO -->
+    <section class="hero hero--cover">
+        <div class="hero-image">
+            <img src="imgs/chitwan8.jpeg" alt="Chitwan landscape" loading="eager">
+        </div>
+        <div class="hero-content">
+            <p class="hero-issue">literature and imagery</p>
+            <h1 class="hero-title">While in the foot of the Himalayas</h1>
+            <div class="hero-meta">
+                <span>Words and photos by Nischal Kunwar</span>
+            </div>
+        </div>
+        <div class="hero-scroll">Scroll to explore</div>
+    </section>
+
+    <!-- SECTION 2 — PROLOGUE -->
+    <section class="prologue" id="prologue">
+        <div class="prologue-inner">
+            <p class="prologue-label reveal">Prologue</p>
+            <p class="prologue-text reveal">
+                Somewhere between the silence of snowfields and the low murmur of coastal wind, there is a threshold where the map becomes irrelevant. You stand at the edge of a glacier-carved valley and realize that the coordinates pinned to your itinerary cannot capture the weight of this light, nor the way it turns granite into silver at four in the morning. This is the north that exists beyond navigation - a place measured not in latitude but in the quality of stillness it demands of you.
+            </p>
+
+            <div class="prologue-pullquote reveal">
+                <p>"The compass, in the end, points not to a destination but to the traveler's own willingness to be disoriented."</p>
+                <cite>- From the field journals, March 2026</cite>
+            </div>
+
+            <p class="prologue-text reveal">
+                We set out in early March, when the days were still short enough to feel borrowed. The route we had sketched across three countries was ambitious but deliberately unfinished - gaps left for weather, for chance encounters, for the kind of detours that become the story. What follows is not a guide. It is a document of attention: the slow practice of looking at a landscape until it looks back.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 3 — THE ROUTE -->
+    <section class="route" id="route">
+        <div class="route-bg">
+            <img src="imgs/chitwan7.JPG" alt="Chitwan National Park landscape" class="active" data-slide="0">
+            <img src="imgs/patan1.JPG" alt="Patan Durbar Square" data-slide="1">
+        </div>
+
+        <div class="route-chapters">
+
+            <article class="chapter reveal" data-chapter="0">
+                <div class="chapter-number">01</div>
+                <p class="chapter-location">Chitwan National Park, Nepal // 100 ft</p>
+                <h2 class="chapter-title">Humans and Rhinos: One Coexistence</h2>
+                <p class="chapter-body">
+                    The Lofoten wall rises without warning - a jagged curtain of gneiss and granite that breaks the horizon line and refuses to let you look away. We arrived by ferry in the pale blue of a subarctic dawn, the kind of light that makes everything look as though it has been painted with a single, careful brush.
+                </p>
+                <p class="chapter-body">
+                    For three days we traced the coastal road between fishing villages, each one a study in red and ochre wood against stone-grey water. The silence here is architectural; it has rooms and corridors.
+                </p>
+                <a href="chitwan.html" class="chapter-link">
+                    Read the full chapter
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+                </a>
+            </article>
+
+            <article class="chapter reveal" data-chapter="1">
+                <div class="chapter-number">02</div>
+                <p class="chapter-location">Patan Durbar Square, Nepal // 4,300 ft</p>
+                <h2 class="chapter-title">The Beauty of Pagoda Architecture</h2>
+                <p class="chapter-body">
+                    Iceland teaches you that blue is not a single colour but a language. The glacial lagoon at Jokulsarlon speaks it in dozens of dialects - cerulean in the shallows, cobalt where the icebergs drift, a deep and improbable indigo at their fractured cores.
+                </p>
+                <p class="chapter-body">
+                    We spent an afternoon watching ice calve from the glacier's tongue, each collapse sending low thunder across the water. Time behaves differently near ice this old. You begin to understand that what you are witnessing is not scenery but geology in real-time, the earth slowly revising itself.
+                </p>
+                <span class="chapter-link chapter-link--static">COMING SOON!</span>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- SECTION 4 — THE GALLERY -->
+    <section class="gallery" id="gallery">
+        <div class="gallery-header reveal">
+            <h2 class="gallery-title">Gallery</h2>
+            <span class="gallery-count">8 Photographs</span>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item tall reveal">
+                <button class="gallery-preview" type="button" aria-label="Open full-size image: Patan Durbar Square, 2026">
+                    <img src="imgs/patan2.JPG" alt="Patan Durbar Square, 2026" loading="lazy">
+                </button>
+                <div class="gallery-caption">
+                    <p class="gallery-caption-title">Patan Durbar Square, 2026</p>
+                </div>
+            </div>
+            <div class="gallery-item reveal">
+                <button class="gallery-preview" type="button" aria-label="Open full-size image: Ancient water sprout, Patan">
+                    <img src="imgs/patan3.JPG" alt="Ancient water sprout, Patan" loading="lazy">
+                </button>
+                <div class="gallery-caption">
+                    <p class="gallery-caption-title">Ancient water sprout, Patan</p>
+                </div>
+            </div>
+            <div class="gallery-item reveal">
+                <button class="gallery-preview" type="button" aria-label="Open full-size image: Birds under a traditional house over a pond, Patan">
+                    <img src="imgs/patan4.JPG" alt="Birds under a traditional house over a pond, Patan" loading="lazy">
+                </button>
+                <div class="gallery-caption">
+                    <p class="gallery-caption-title">Birds under a traditional house over a pond, Patan</p>
+                </div>
+            </div>
+            <div class="gallery-item reveal">
+                <button class="gallery-preview" type="button" aria-label="Open full-size image: Swoyambhunath Stupa, Kathmandu">
+                    <img src="imgs/patan5.JPG" alt="Swoyambhunath Stupa, Kathmandu" loading="lazy">
+                </button>
+                <div class="gallery-caption">
+                    <p class="gallery-caption-title">Swoyambhunath Stupa, Kathmandu</p>
+                </div>
+            </div>
+            <div class="gallery-item tall reveal">
+                <button class="gallery-preview" type="button" aria-label="Open full-size image: Shivapuri National Park, Kathmandu">
+                    <img src="imgs/patan7.jpeg" alt="Shivapuri National Park, Kathmandu" loading="lazy">
+                </button>
+                <div class="gallery-caption">
+                    <p class="gallery-caption-title">Shivapuri National Park, Kathmandu</p>
+                </div>
+            </div>
+            <div class="gallery-item reveal">
+                <button class="gallery-preview" type="button" aria-label="Open full-size image: Phewa Lake, Pokhara">
+                    <img src="imgs/patan6.jpeg" alt="Phewa Lake, Pokhara" loading="lazy">
+                </button>
+                <div class="gallery-caption">
+                    <p class="gallery-caption-title">Phewa Lake, Pokhara</p>
+                </div>
+            </div>
+            <div class="gallery-item reveal">
+                <button class="gallery-preview" type="button" aria-label="Open full-size image: Elephants, Chitwan National Park">
+                    <img src="imgs/chitwan10.jpeg" alt="Elephants, Chitwan National Park" loading="lazy">
+                </button>
+                <div class="gallery-caption">
+                    <p class="gallery-caption-title">Elephants, Chitwan National Park</p>
+                </div>
+            </div>
+            <div class="gallery-item reveal">
+                <button class="gallery-preview" type="button" aria-label="Open full-size image: Hammock in the hotel, Chitwan">
+                    <img src="imgs/chitwan2.JPG" alt="Hammock in the hotel, Chitwan" loading="lazy">
+                </button>
+                <div class="gallery-caption">
+                    <p class="gallery-caption-title">Hammock in the hotel, Chitwan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <dialog class="image-lightbox" aria-label="Full-size gallery image">
+        <button class="image-lightbox-close" type="button" aria-label="Close image">&times;</button>
+        <button class="image-lightbox-nav image-lightbox-prev" type="button" aria-label="Previous image">&lsaquo;</button>
+        <img class="image-lightbox-image" alt="">
+        <p class="image-lightbox-caption"></p>
+        <button class="image-lightbox-nav image-lightbox-next" type="button" aria-label="Next image">&rsaquo;</button>
+    </dialog>
+
+    <!-- SECTION 5 — FOOTER -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h3 class="footer-brand-title">The<br>Record</h3>
+                <p class="footer-brand-desc">A visual journal of Nepal’s places, landscapes, and wildlife, told through words and photographs.</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-col-title">More</p>
+                <ul>
+                    <li><a href="https://www.britannica.com/place/Nepal" target="_blank" rel="noopener noreferrer">Nepal</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Chitwan_National_Park" target="_blank" rel="noopener noreferrer">Chitwan National Park</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Pagoda" target="_blank" rel="noopener noreferrer">Pagoda architecture</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Patan_Durbar_Square" target="_blank" rel="noopener noreferrer">Patan Durbar Square</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-themes">
+                <p class="footer-col-title">Themes</p>
+                <ul>
+                    <li>People and wildlife</li>
+                    <li>Habitats and conservation</li>
+                    <li>Places and culture</li>
+                </ul>
+            </div>
+            <div class="footer-col footer-about">
+                <p class="footer-col-title">About this project</p>
+                <p>A first-semester web project, this page explores Nepal primarily through the lens of literature and the pen of photography.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">
+                &copy; 2026 The Record. Design: <a href="https://www.tooplate.com" target="_blank" rel="nofollow noopener">Tooplate</a>
+            </p>
+            <div class="footer-social">
+                <a class="footer-social-featured" href="https://www.linkedin.com/in/nischalkunwar/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a class="footer-social-featured" href="https://substack.com/@miyan0" target="_blank" rel="noopener noreferrer">Substack</a>
+                <a class="footer-social-featured" href="mailto:nischalkunwar008@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+    <script src="tooplate-2164-compass-script.js"></script>
 </body>
 </html>
