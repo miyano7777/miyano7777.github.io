@@ -64,6 +64,10 @@ img {
     object-fit: cover;
 }
 
+.chitwan-hero .hero-image img {
+    object-position: center 58%;
+}
+
 a {
     color: var(--forest);
     text-decoration: none;
@@ -220,6 +224,37 @@ a:hover {
     );
 }
 
+.chitwan-hero .hero-image::after {
+    background: linear-gradient(
+        180deg,
+        rgba(3, 10, 7, 0.58) 0%,
+        rgba(3, 10, 7, 0.24) 46%,
+        rgba(3, 10, 7, 0.04) 100%
+    );
+}
+
+.chitwan-hero .hero-content {
+    top: clamp(7rem, 16vh, 10rem);
+    bottom: auto;
+    max-width: min(760px, calc(100% - var(--gutter) * 2));
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.55);
+}
+
+.chitwan-hero .hero-title {
+    max-width: 16ch;
+    font-size: clamp(2.4rem, 6vw, 5.5rem);
+    margin-bottom: 1.25rem;
+}
+
+.hero-intro {
+    max-width: 60ch;
+    margin-top: 1.25rem;
+    font-family: var(--serif);
+    font-size: clamp(1rem, 1.4vw, 1.2rem);
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.94);
+}
+
 .hero-content {
     position: absolute;
     bottom: clamp(3rem, 8vh, 8rem);
@@ -350,6 +385,23 @@ a:hover {
     line-height: 1.75;
     color: var(--slate);
     letter-spacing: -0.01em;
+}
+
+.chitwan-article .prologue-text {
+    font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+    line-height: 1.7;
+}
+
+.article-date {
+    margin-top: var(--space-md);
+    padding-top: var(--space-sm);
+    border-top: 1px solid var(--mist);
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: var(--stone);
+    text-align: right;
 }
 
 .prologue-text::first-letter {
@@ -1095,6 +1147,19 @@ a:hover {
     .hero--cover .hero-title {
         max-width: 14ch;
         font-size: clamp(2.3rem, 9vw, 3.4rem);
+    }
+
+    .chitwan-hero .hero-content {
+        top: 6.5rem;
+    }
+
+    .chitwan-hero .hero-title {
+        font-size: clamp(2.15rem, 9vw, 3.2rem);
+    }
+
+    .hero-intro {
+        font-size: 0.9rem;
+        line-height: 1.45;
     }
 
     .hero-scroll {
